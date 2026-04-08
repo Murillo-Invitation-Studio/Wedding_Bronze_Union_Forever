@@ -20,10 +20,10 @@ $shadow-titulo-movil: 3px 3px 0 $color-negro;
 //  Cuerpo de la pagina
 //====================================================
 body{
-    font-family: Arial, sans-serif;
+    width: 100%;
+    height: auto;
     margin: 0;
     text-align: center;
-    background: $color-blancomarfil;
     padding-left: 0px;
     padding-right: 0px;
 }
