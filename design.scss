@@ -20,12 +20,14 @@ $shadow-titulo-movil: 3px 3px 0 $color-negro;
 //  Cuerpo de la pagina
 //====================================================
 body{
-    width: 100%;
-    height: auto;
-    margin: 0;
     text-align: center;
-    padding-left: 0px;
-    padding-right: 0px;
+    background-image: url("https://Murillo-Invitation-Studio.github.io/Wedding_Bronze_Union_Forever/Image/Fondo.jpg");
+    background-repeat: repeat-y;       // ✅ ahora sí
+    background-position: top center;
+    background-size: 100% auto;
+    background-attachment: scroll;
+    padding: 0;
+    margin: 0;
 }
 
 //====================================================
@@ -73,7 +75,7 @@ body{
         
     h1{
         font-family: $font-titulos;
-        font-size: $size-titulos;
+        font-size: 40px;
         text-shadow: $shadow-titulo-pc;
         white-space: nowrap;
         margin: 0;
@@ -81,7 +83,7 @@ body{
 
     p{
         font-family: $font-texto;
-        font-size: $size-texto;
+        font-size: 60px;
         text-shadow: $shadow-titulo-pc;
         white-space: nowrap;
         margin: 0;
@@ -103,6 +105,13 @@ body{
     font-size: 10px;
     animation: fadeIn 1s ease forwards;
     animation-delay: 1s;
+
+    h2{
+        font-family: $font-texto;
+        font-size: 30px;
+        color: $color-blanco;
+        margin: 0;
+    }
 
     span{
         display: block;
@@ -148,6 +157,7 @@ body{
         width: 95%;
         height: auto;
         grid-column: 1 / 2;
+        border-radius: 20px;
         box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
     }
 
@@ -292,6 +302,7 @@ body{
         max-width: 380px;
         height: auto;
         margin: 0 auto 30px;
+        border-radius: 20px;
         box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
     }
 }
@@ -349,6 +360,11 @@ body{
     width: 90%;
     max-width: 100%;
     gap: 10px;
+
+    .icono-sobre{
+        color: $color-negro;
+        flex: 0 0 auto;
+    }
 
     .linea{
         flex: 1;
