@@ -1,0 +1,353 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+  background: #f8f5f0;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.Imagen_Cabezera {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000;
+}
+.Imagen_Cabezera .foto-portada {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1);
+  animation: zoomPortada 25s ease-in-out infinite alternate;
+}
+.Imagen_Cabezera .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.8) 80%, rgb(0, 0, 0) 100%);
+}
+
+.Titulo_Cabezera {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 5;
+}
+.Titulo_Cabezera h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 45px;
+  text-shadow: 4px 4px 0 #000;
+  white-space: nowrap;
+  margin: 0;
+}
+.Titulo_Cabezera p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  text-shadow: 4px 4px 0 #000;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  z-index: 3;
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-size: 10px;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 1s;
+}
+.scroll-indicator span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-top: 0;
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+  transform: rotate(45deg);
+  animation: scrollAnim 1.8s infinite;
+  opacity: 0.8;
+}
+.scroll-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.Frase1 {
+  padding: 0;
+  text-align: center;
+}
+.Frase1 p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+}
+
+.Presentacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.Presentacion .FotoPlantilla2 {
+  display: block;
+  margin: 0 0 0 30px;
+  width: 95%;
+  height: auto;
+  grid-column: 1/2;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
+}
+.Presentacion .Mensaje_de_los_novios {
+  grid-column: 2/3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.Presentacion .Mensaje_de_los_novios h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin: 25px;
+}
+.Presentacion .Mensaje_de_los_novios h3,
+.Presentacion .Mensaje_de_los_novios p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin: 5px;
+}
+
+.Padres {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 900px;
+  margin: 0 auto;
+  row-gap: 40px;
+}
+.Padres h2 {
+  grid-column: 1/-1;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.Padres .Padres_Novio,
+.Padres .Padres_Novia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.Padres .Padres_Novio h2,
+.Padres .Padres_Novio p,
+.Padres .Padres_Novia h2,
+.Padres .Padres_Novia p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin: 0;
+}
+.Padres .Padres_Novia {
+  margin-top: 200px;
+}
+
+.Detalles_Evento {
+  text-align: center;
+}
+.Detalles_Evento h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin: 0 auto 40px;
+}
+.Detalles_Evento .Evento {
+  background: #fff;
+  padding: 40px;
+  margin: 0 auto 30px;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.Detalles_Evento .Evento h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin: 0 0 20px;
+}
+.Detalles_Evento .Evento h4 {
+  font-family: "Cormorant Garamond", serif, bold;
+  font-size: 25px;
+  margin: 0 0 30px;
+}
+.Detalles_Evento .Evento h5 {
+  font-family: "Cormorant Garamond", serif, italic;
+  font-size: 25px;
+  margin: 0;
+}
+.Detalles_Evento .Evento p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin: 0 0 10px;
+}
+.Detalles_Evento .Evento .Imagen_Ceremonia,
+.Detalles_Evento .Evento .Imagen_Recepcion {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin: 20px auto 30px;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
+}
+
+.Confirmacion {
+  text-align: center;
+}
+.Confirmacion h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin: 0 auto 40px;
+}
+.Confirmacion p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin: 0 0 10px;
+}
+.Confirmacion .FotoPlantilla3 {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  margin: 0 auto 30px;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
+}
+
+.Pie_de_pagina {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 1px;
+  margin-top: 25px;
+}
+.Pie_de_pagina p {
+  font-size: 15px;
+}
+
+.botonWhatsapp,
+.boton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+.botonWhatsapp:hover,
+.boton:hover {
+  background: #333;
+}
+.botonWhatsapp:active,
+.boton:active {
+  transform: scale(0.97);
+}
+
+.divisor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 100%;
+  gap: 10px;
+}
+.divisor .linea {
+  flex: 1;
+  height: 1px;
+  background: #000;
+}
+
+@media (min-width: 901px) {
+  .Imagen_Cabezera {
+    height: 100vh;
+  }
+  .Imagen_Cabezera .foto-portada {
+    -o-object-position: center 20%;
+       object-position: center 20%;
+    transform: none;
+    animation: none;
+  }
+}
+@media (max-width: 768px) {
+  .Frase1 {
+    margin: 5px;
+  }
+  .Presentacion {
+    grid-template-columns: 1fr;
+  }
+  .Presentacion .FotoPlantilla2 {
+    grid-column: 1/2;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
+  }
+  .Presentacion .Mensaje_de_los_novios {
+    grid-column: 1/2;
+    margin: 5px;
+  }
+  .Padres {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    padding: 0 15px;
+  }
+  .Padres h2 {
+    margin: 0;
+  }
+  .Padres .Padres_Novio {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .Padres .Padres_Novio h2 {
+    white-space: nowrap;
+    text-align: center;
+  }
+  .Padres .Padres_Novio p {
+    white-space: nowrap;
+    overflow-wrap: break-word;
+  }
+  .Padres .Padres_Novio .Imagen_Novio {
+    align-self: center;
+  }
+  .Padres .Padres_Novia {
+    align-items: flex-end;
+    text-align: right;
+    margin-top: 200px;
+  }
+  .Padres .Padres_Novia h2 {
+    white-space: nowrap;
+  }
+  .Padres .Padres_Novia p {
+    white-space: nowrap;
+    overflow-wrap: break-word;
+  }
+  .Padres .Padres_Novia .Imagen_Novia {
+    align-self: center;
+  }
+}
+@keyframes scrollAnim {
+  0% {
+    transform: rotate(45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(45deg) translate(5px, 5px);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=design.css.map */
