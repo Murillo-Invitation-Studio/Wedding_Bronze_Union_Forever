@@ -1,8 +1,8 @@
 //====================================================
 //  Variables
 //====================================================
-$font-titulos: 'Great Vibes', cursive;
-$font-texto: 'Cormorant Garamond', serif;
+$font-titulos: "Pinyon Script", cursive;
+$font-texto: "Kalam", sans-serif;
 
 $size-titulos: 45px;
 $size-texto: 25px;
@@ -75,7 +75,7 @@ body{
         
     h1{
         font-family: $font-titulos;
-        font-size: 40px;
+        font-size: 60px;
         text-shadow: $shadow-titulo-pc;
         white-space: nowrap;
         margin: 0;
@@ -83,6 +83,7 @@ body{
 
     p{
         font-family: $font-texto;
+        font-style: italic;
         font-size: 60px;
         text-shadow: $shadow-titulo-pc;
         white-space: nowrap;
@@ -107,7 +108,7 @@ body{
     animation-delay: 1s;
 
     h2{
-        font-family: $font-texto;
+        font-family: Cormorant Garamond, serif;
         font-size: 30px;
         color: $color-blanco;
         margin: 0;

@@ -39,14 +39,15 @@ body {
   z-index: 5;
 }
 .Titulo_Cabezera h1 {
-  font-family: "Great Vibes", cursive;
-  font-size: 40px;
+  font-family: "Pinyon Script", cursive;
+  font-size: 60px;
   text-shadow: 4px 4px 0 #000;
   white-space: nowrap;
   margin: 0;
 }
 .Titulo_Cabezera p {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Kalam", sans-serif;
+  font-style: italic;
   font-size: 60px;
   text-shadow: 4px 4px 0 #000;
   white-space: nowrap;
@@ -67,7 +68,7 @@ body {
   animation-delay: 1s;
 }
 .scroll-indicator h2 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: Cormorant Garamond, serif;
   font-size: 30px;
   color: #fff;
   margin: 0;
@@ -92,7 +93,7 @@ body {
   text-align: center;
 }
 .Frase1 p {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Kalam", sans-serif;
   font-size: 25px;
 }
 
@@ -120,13 +121,13 @@ body {
   margin: 0;
 }
 .Presentacion .Mensaje_de_los_novios h2 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Kalam", sans-serif;
   font-size: 25px;
   margin: 25px;
 }
 .Presentacion .Mensaje_de_los_novios h3,
 .Presentacion .Mensaje_de_los_novios p {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Kalam", sans-serif;
   font-size: 25px;
   margin: 5px;
 }
@@ -140,7 +141,7 @@ body {
 }
 .Padres h2 {
   grid-column: 1/-1;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Kalam", sans-serif;
   font-size: 25px;
   text-align: center;
   margin-bottom: 20px;
@@ -156,7 +157,7 @@ body {
 .Padres .Padres_Novio p,
 .Padres .Padres_Novia h2,
 .Padres .Padres_Novia p {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Kalam", sans-serif;
   font-size: 25px;
   margin: 0;
 }
@@ -168,7 +169,7 @@ body {
   text-align: center;
 }
 .Detalles_Evento h2 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Kalam", sans-serif;
   font-size: 25px;
   margin: 0 auto 40px;
 }
@@ -181,22 +182,22 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 .Detalles_Evento .Evento h3 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Kalam", sans-serif;
   font-size: 25px;
   margin: 0 0 20px;
 }
 .Detalles_Evento .Evento h4 {
-  font-family: "Cormorant Garamond", serif, bold;
+  font-family: "Kalam", sans-serif, bold;
   font-size: 25px;
   margin: 0 0 30px;
 }
 .Detalles_Evento .Evento h5 {
-  font-family: "Cormorant Garamond", serif, italic;
+  font-family: "Kalam", sans-serif, italic;
   font-size: 25px;
   margin: 0;
 }
 .Detalles_Evento .Evento p {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Kalam", sans-serif;
   font-size: 25px;
   margin: 0 0 10px;
 }
@@ -213,12 +214,12 @@ body {
   text-align: center;
 }
 .Confirmacion h2 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Kalam", sans-serif;
   font-size: 25px;
   margin: 0 auto 40px;
 }
 .Confirmacion p {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Kalam", sans-serif;
   font-size: 25px;
   margin: 0 0 10px;
 }
@@ -247,7 +248,7 @@ body {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 25px;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Kalam", sans-serif;
   font-size: 20px;
   background: #111;
   color: #fff;
