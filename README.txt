@@ -1,5 +1,7 @@
 Wedding Template Bronze - Union Forever
 
+Precio de plantilla: $300
+
 Incluye:
   1. Tiempo Visible: 4 Meses visible.
   2. Tipo de Diseño: Basico.
